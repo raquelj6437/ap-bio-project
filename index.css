@@ -8,4 +8,16 @@ body{
 
 .topic{
     width:24.55256%;
+    height: 40px;
+    background-color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 15px
+}
+
+.topic:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid white;
 }
