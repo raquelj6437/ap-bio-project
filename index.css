@@ -7,17 +7,68 @@ body{
 }
 
 .topic{
-    width:24.55256%;
+    width:24.5%;
     height: 40px;
     background-color: white;
     transition-duration: 0.4s;
     cursor: pointer;
     border: 2px solid black;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .topic:hover{
     color:white;
     background-color: black;
     border: 2px solid white;
+}
+
+.pbuttons{
+    width:50%;
+    height: 40px;
+    float: left;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.pbuttons:hover{
+    color:white;
+    background-color: lightgrey;
+    border: 2px solid white;
+}
+
+.pbuttons.selected{
+    color:white;
+    background-color: lightgrey;
+    border: 2px solid white;
+}
+
+#mbutton{
+    width:100%;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
+
+#mbutton:hover{
+    color:white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.dropdown{
+    background-color: lightgrey;
+    width:100%;
+}
+
+#background{
+    background-color: lightgrey;
+}
+
+#mdrop{
+    background-color: transparent;
 }

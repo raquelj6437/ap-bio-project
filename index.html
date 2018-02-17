@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="index.css" type="text/css">
     <script>
         $(function() {
+            $('.dropdown').hide()
 
+            $('.pbuttons').on('click', function(){
+                $('button').removeClass('selected');
+                $(this).addClass('selected');
+            });
+            $('#ep').click(function() {
+                $('#lateP').hide()
+                $('#earlyP').show()
+            });
+            $('#lp').click(function() {
+                $('#earlyP').hide()
+                $('#lateP').show()
+            });
+            $('#mbutton').click(function() {
+                $('#mdrop').show()
+            });
         });
     </script>
 </head>
@@ -32,34 +48,33 @@
         <div class='explination' id='prophase'>
             <h3>1. Prophase</h3>
             <p>There are two types of prophase.</p>
-            <div id='earlyP'>
-                <button>Early Prophase</button>
-                <div class='dropdown'>
-                    <p>In <b>early prophase</b>, the cell starts to break down some structures and build others up, setting the stage for division of the chromosomes.
-                        <br> <br> The chromosomes start to condens which make them easier to pull apart later on.
-                        <br><br> During the this process, the <b>mitotic spindle</b> begins to form. The spindle is a structure made of microtubules, strong fibers that are part of the cell’s “skeleton.” Its job is to organize the chromosomes and move
-                        them around during mitosis. The spindle grows between the centrosomes as they move apart.
-                        <br><br> The <b>nucleolus</b>, a part of the nucleus where ribosomes are made, disappears. This is a sign that the nucleus is getting ready to break down.
-                    </p>
-                </div>
+            <div id='background'>
+            <button id='ep' class='pbuttons'>Early Prophase</button>
+            <button id='lp' class='pbuttons'>Late Prophase</button>
+            <br><br>
+            <div class='dropdown' id='earlyP'>
+                <p>In <b>early prophase</b>, the cell starts to break down some structures and build others up, setting the stage for division of the chromosomes.
+                    <br> <br> The chromosomes start to condens which make them easier to pull apart later on.
+                    <br><br> During the this process, the <b>mitotic spindle</b> begins to form. The spindle is a structure made of microtubules, strong fibers that are part of the cell’s “skeleton.” Its job is to organize the chromosomes and move them
+                    around during mitosis. The spindle grows between the centrosomes as they move apart.
+                    <br><br> The <b>nucleolus</b>, a part of the nucleus where ribosomes are made, disappears. This is a sign that the nucleus is getting ready to break down.
+                </p>
             </div>
-            <div id='lateP'>
-                <button>Late Prophase</button>
-                <div class='dropdown'>
-                    <p>In <b>late prophase</b>, sometimes also called prometaphase, the mitotic spindle begins to capture and organize the chromosomes.
-                        <br><br> The chromosomes finish condensing, so they are very compact.
-                        <br><br> The mitotic spindle grows more, and some of the microtubules start to “capture” chromosomes.
-                        <br><br> The nuclear envelope breaks down, releasing the chromosomes.
-                    </p>
-                </div>
+            <div class='dropdown' id='lateP'>
+                <p>In <b>late prophase</b>, sometimes also called prometaphase, the mitotic spindle begins to capture and organize the chromosomes.
+                    <br><br> The chromosomes finish condensing, so they are very compact.
+                    <br><br> The mitotic spindle grows more, and some of the microtubules start to “capture” chromosomes.
+                    <br><br> The nuclear envelope breaks down, releasing the chromosomes.
+                </p>
             </div>
+            </div>
+            <br>
             <img src="images/prophase.png" alt="prophase">
             <div id='microtubules'>
                 <p> <b>Microtubules</b> can bind to chromosomes at the kinetochore, a patch of protein found on the centromere of each sister chromatid. <b>Centromeres</b> are the regions of DNA where the sister chromatids are most tightly connected.</p>
-                <button>What do they do?</button>
-                <div class='dropdown'>
-                    <p>Microtubules that bind a chromosome are called <b>kinetochore microtubules</b>. Microtubules that don’t bind to kinetochores can grab on to microtubules from the opposite pole, stabilizing the spindle. More microtubules extend from
-                        each centrosome towards the edge of the cell, forming a structure called the <b>aster</b>.</p>
+                <button id="mbutton">What do <b>microtubules</b> do?</button>
+                <div class='dropdown' id='mdrop'>
+                    <p>Microtubules that bind a chromosome are called <b>kinetochore microtubules</b>. Microtubules that don’t bind to kinetochores can grab on to microtubules from the opposite pole, stabilizing the spindle. More microtubules extend from each centrosome towards the edge of the cell, forming a structure called the <b>aster</b>.</p>
                 </div>
             </div>
         </div>
