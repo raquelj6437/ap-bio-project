@@ -1,9 +1,12 @@
 body{
-    background-color: #e0faff;
+    background-image: url('images/cells2.jpg');
     font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#title,h3{
+h1,h3{
     text-align: center;
     font-family: 'Merriweather', serif;
 }
@@ -41,7 +44,7 @@ body{
 }
 
 .pbuttons.selected{
-    color:black;
+    color:white;
     background-color: transparent;
     border: 2px solid white;
 }
@@ -67,7 +70,7 @@ body{
 }
 
 .background{
-    background-color: #e0faff;
+    background-color: transparent;
     border: 2px solid black;
 }
 
