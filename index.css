@@ -65,10 +65,13 @@ body{
     width:100%;
 }
 
-#background{
+.background{
     background-color: lightgrey;
 }
 
-#mdrop{
-    background-color: transparent;
+.resize{
+    position: relative;
+    width: 89%;
+    left: 20px;
 }
+
