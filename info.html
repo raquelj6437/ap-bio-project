@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>The Cell Cycle</title>
-    
-
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" type="text/css">
     <script>
@@ -30,6 +28,11 @@
                 $('#mdrop').show()
             });
         });
+        
+        if (performance.navigation.type == 1) {
+            console.log( "This page is reloaded" )
+            document.location.href="index.html";;
+          }
     </script>
 </head>
 
