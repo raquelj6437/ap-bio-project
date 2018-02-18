@@ -28,18 +28,29 @@
                 $('#mdrop').show()
             });
         });
-        
-        if (performance.navigation.type == 1) {
-            console.log( "This page is reloaded" )
-            document.location.href="index.html";;
-          }
+
+
+
+        $(document).keypress(function(event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            }
+        });
+
+        // if (performance.navigation.type == 1) {
+        //     console.log( "This page is reloaded" )
+        //     document.location.href="index.html";;
+        //   }
     </script>
 </head>
 
 <body>
     <h1 id='title'>The Cell Cycle</h1>
 
-    <p id="cell">The Cell Cycle goes through a process of cell division call mitosis. Mitosis is a type of cell division in which one cell, the mother, divides to produce two new cells, the daughters, that are genetically identical to itself. Mitosis is the part of the division process in which the DNA of the cell's nucleus is split into two equal sets of chromosomes. Meiosis, on the other hand, is used for just one purpose in the human body. Its goal is to make daughter cells with exactly half as many chromosomes
+    <p id="cell">The Cell Cycle goes through a process of cell division call mitosis. Mitosis is a type of cell division in which one cell, the mother, divides to produce two new cells, the daughters, that are genetically identical to itself. Mitosis is the part of
+        the division process in which the DNA of the cell's nucleus is split into two equal sets of chromosomes. Meiosis, on the other hand, is used for just one purpose in the human body. Its goal is to make daughter cells with exactly half as many chromosomes
         as the starting cell.</p>
     <div id='phases'>
         <p>There are four phases of Mitosis.</p>
@@ -83,12 +94,12 @@
             <div id='microtubules'>
                 <p> <b>Microtubules</b> can bind to chromosomes at the kinetochore, a patch of protein found on the centromere of each sister chromatid. <b>Centromeres</b> are the regions of DNA where the sister chromatids are most tightly connected.</p>
                 <div class='background'>
-                <button id="mbutton">What do <b>microtubules</b> do?</button>
-                <div class='dropdown' id='mdrop'>
-                    <p>Microtubules that bind a chromosome are called <b>kinetochore microtubules</b>. Microtubules that don’t bind to kinetochores can grab on to microtubules from the opposite pole, stabilizing the spindle. More microtubules extend from
-                        each centrosome towards the edge of the cell, forming a structure called the <b>aster</b>.</p>
-                     <br>
-                </div>
+                    <button id="mbutton">What do <b>microtubules</b> do?</button>
+                    <div class='dropdown resize' id='mdrop'>
+                        <p>Microtubules that bind a chromosome are called <b>kinetochore microtubules</b>. Microtubules that don’t bind to kinetochores can grab on to microtubules from the opposite pole, stabilizing the spindle. More microtubules extend
+                            from each centrosome towards the edge of the cell, forming a structure called the <b>aster</b>.</p>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 body{
-    background-color: lightblue;
+    background-color: #e0faff;
 }
 
-#title{
+.title,h3{
     text-align: center;
 }
 
@@ -34,13 +34,13 @@ body{
 
 .pbuttons:hover{
     color:white;
-    background-color: lightgrey;
+    background-color: black;
     border: 2px solid white;
 }
 
 .pbuttons.selected{
-    color:white;
-    background-color: lightgrey;
+    color:black;
+    background-color: transparent;
     border: 2px solid white;
 }
 
@@ -50,7 +50,6 @@ body{
     font-size: 15px;
     background-color: white;
     border: none;
-    border: 2px solid black;
     transition-duration: 0.4s;
 }
 
@@ -61,12 +60,13 @@ body{
 }
 
 .dropdown{
-    background-color: lightgrey;
+    background-color: none;
     width:100%;
 }
 
 .background{
-    background-color: lightgrey;
+    background-color: #e0faff;
+    border: 2px solid black;
 }
 
 .resize{
@@ -75,3 +75,7 @@ body{
     left: 20px;
 }
 
+img {
+    position: relative;
+    left: 40%;
+}
