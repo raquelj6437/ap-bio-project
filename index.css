@@ -30,13 +30,13 @@ h1,h3{
 }
 
 .topic{
-    width:24.5%;
+    width:25%;
     height: 40px;
     background-color: white;
     transition-duration: 0.4s;
-    cursor: pointer;
-    border: 2px solid black;
     font-size: 25px;
+    float: left;
+    border:none;
 }
 
 .topic:hover{
@@ -103,9 +103,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    z-index: -1;
 }
 
-#phases,#cell{
+#phases,#intro{
     font-size: 25px
 }
 
@@ -116,4 +117,22 @@ b{
 
 button{
     font-family: 'Merriweather', serif;
+    cursor: pointer;
+}
+
+#buttons{
+    border: 2px solid black;
+    height: 40px;
+}
+
+#cell{
+    height: 100px;
+    width: 100px;
+    /*background-image: url('images/cell.png');*/
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+
+#title{
+    font-size: 50px;
 }
