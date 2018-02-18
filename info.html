@@ -44,15 +44,19 @@
         if (performance.navigation.type == 1) {
             document.location.href="index.html";;
           }
-          
-        $(window).scroll(function(){
-    		if ($(this).scrollTop() > 100) {
-    			$('.scrollToTop').fadeIn();
-
-    		} else {
-    			$('.scrollToTop').fadeOut();
-    		}
-    	});
+		    
+        $( window ).scroll(function() {
+            if ($(this).scrollTop() < 100) {
+			    $('.scrollToTop').hide();
+		    }
+		    else{
+		        $('.scrollToTop').fadeIn();
+                clearTimeout( $.data( this, "scrollCheck" ) );
+                $.data( this, "scrollCheck", setTimeout(function() {
+                    $('.scrollToTop').delay(500).fadeOut(2000);
+                }, 250) );
+		    }
+        });
     </script>
 </head>
 
