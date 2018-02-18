@@ -12,6 +12,7 @@
             $('.dropdown').hide()
             $('#earlyP').show()
             $('#ep').addClass('selected');
+            $('.scrollToTop').hide();
 
             $('.pbuttons').on('click', function() {
                 $('button').removeClass('selected');
@@ -43,10 +44,20 @@
         if (performance.navigation.type == 1) {
             document.location.href="index.html";;
           }
+          
+        $(window).scroll(function(){
+    		if ($(this).scrollTop() > 100) {
+    			$('.scrollToTop').fadeIn();
+
+    		} else {
+    			$('.scrollToTop').fadeOut();
+    		}
+    	});
     </script>
 </head>
 
 <body>
+    <p class='scrollToTop'>Press Enter to scroll back to top</p>
     <h1 id='title'>The Cell Cycle</h1>
 
     <p id="cell">The Cell Cycle goes through a process of cell division call mitosis. Mitosis is a type of cell division in which one cell, the mother, divides to produce two new cells, the daughters, that are genetically identical to itself. Mitosis is the part of the division process in which the DNA of the cell's nucleus is split into two equal sets of chromosomes. Meiosis, on the other hand, is used for just one purpose in the human body. Its goal is to make daughter cells with exactly half as many chromosomes
@@ -132,6 +143,8 @@
                 <br><br> The chromosomes begin to decondense and return to their “stringy” form.
             </p>
             <img src="images/telophase.png" alt="prophase">
+            <br><br>
+            <p></p>
         </div>
     </div>
 </body>
