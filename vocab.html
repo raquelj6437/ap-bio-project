@@ -3,8 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Vocabulary</title>
     <link rel="stylesheet" href="index.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300" rel="stylesheet">
+    
+    <script>
+        if (performance.navigation.type == 1) {
+            document.location.href = "index.html";;
+        }
+        
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+        
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
 </head>
 
 <body>
@@ -13,8 +43,12 @@
         <div id="myDropdown" class="dropdown-content">
             <a href="info.html">Home</a>
             <a href="vocab.html">Vocabulary</a>
-            <a href="">Quiz</a>
+            <a href="https://www.biologycorner.com/quiz/qz_mitosis.html">Quiz</a>
         </div>
+    </div>
+    
+    <div id='body'>
+        <h1>Vocabulary Words</h1>
     </div>
 </body>
 
