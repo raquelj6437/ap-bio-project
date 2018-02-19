@@ -10,6 +10,7 @@ html{
     position: relative;
     width: 80%;
     left: 10%;
+    font-size: 25px;
 }
 
 .scrollToTop{
