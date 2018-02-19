@@ -6,7 +6,7 @@ html{
     background-size:cover;
 }
 
-body{
+#body{
     position: relative;
     width: 80%;
     left: 10%;
@@ -83,7 +83,7 @@ h1,h3{
 }
 
 .dropdown{
-    background-color: none;
+    background-color: transparent;
     width:100%;
 }
 
@@ -136,3 +136,56 @@ button{
 #title{
     font-size: 50px;
 }
+
+.dropbtn {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size:25px;
+    color: white;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dropbtn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.drop {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    overflow: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    
+    width: 115px;
+    background-color: white;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    height: 50px;
+    font-size:15px;
+    text-decoration: none;
+    text-align: center;
+    top:10px;
+}
+
+.dropdown-content a:hover {
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid black;
+}
+
+.show {display:block;}
