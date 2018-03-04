@@ -121,7 +121,7 @@ button{
     cursor: pointer;
 }
 
-#buttons{
+.buttons{
     border: 2px solid black;
     height: 40px;
 }
@@ -190,3 +190,7 @@ button{
 }
 
 .show {display:block;}
+
+.firstButton{
+    width: 33.3%
+}
