@@ -10,36 +10,36 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300" rel="stylesheet">
-    
+
     <script>
         if (performance.navigation.type == 1) {
             document.location.href = "index.html";;
         }
-        
+
         function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
         }
-        
+
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-        
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
-          }
         }
     </script>
 </head>
 
 <body>
     <style>
-        li{
+        li {
             font-weight: bold;
             text-decoration: underline;
         }
@@ -52,24 +52,37 @@
             <a href="https://www.biologycorner.com/quiz/qz_mitosis.html">Quiz</a>
         </div>
     </div>
-    
-    <div id='body'>
+
+    <div class='body'>
         <h1>Vocabulary Words</h1>
-        
         <ol>
-          <li>Mitotic Spindle</li>
-          <p>The spindle is a structure made of microtubules, strong fibers that are part of the cell’s “skeleton.” Its job is to organize the chromosomes and move them around during mitosis. The spindle grows between the centrosomes as they move apart. </p>
-          <li>Nucleolus</li>
-          <p>A part of the nucleus where ribosomes are made, disappears.</p>
-          <li>Microtubules</li>
-          <p>They can bind to chromosomes at the kinetochore, a patch of protein found on the centromere of each sister chromatid.</p>
-          <li>Centromeres</li>
-          <p>They are the regions of DNA where the sister chromatids are most tightly connected.</p>
-          <li>Spindle Checkpoint</li>
-          <p>Where the cell will check to make sure that all the chromosomes are at the metaphase plate with their kinetochores correctly attached to microtubules. It  helps ensure that the sister chromatids will split evenly between the two daughter cells when they separate in the next step.</p>
-          <li>Motor Proteins</li>
-          <p>Molecular machines that can “walk” along microtubule tracks and carry a cargo. In mitosis, motor proteins carry chromosomes or other microtubules as they walk.</p>
-        </ol> 
+            <li>Mitotic Spindle</li>
+            <p>The spindle is a structure made of microtubules, strong fibers that are part of the cell’s “skeleton.” Its job is to organize the chromosomes and move them around during mitosis. The spindle grows between the centrosomes as they move apart.
+                </p>
+            <li>Nucleolus</li>
+            <p>A part of the nucleus where ribosomes are made, disappears.</p>
+            <li>Microtubules</li>
+            <p>They can bind to chromosomes at the kinetochore, a patch of protein found on the centromere of each sister chromatid.</p>
+            <li>Centromeres</li>
+            <p>They are the regions of DNA where the sister chromatids are most tightly connected.</p>
+            <li>Spindle Checkpoint</li>
+            <p>Where the cell will check to make sure that all the chromosomes are at the metaphase plate with their kinetochores correctly attached to microtubules. It helps ensure that the sister chromatids will split evenly between the two daughter cells
+                when they separate in the next step.</p>
+            <li>Motor Proteins</li>
+            <p>Molecular machines that can “walk” along microtubule tracks and carry a cargo. In mitosis, motor proteins carry chromosomes or other microtubules as they walk.</p>
+            <li>Mitotic (M) Phase</li>
+            <p>During the mitotic (M) phase, the cell divides its copied DNA and cytoplasm to make two new cells. M phase involves two distinct division-related processes: mitosis and cytokinesis.</p>
+            <li>Cytokinesis</li>
+            <p>In cytokinesis, the cytoplasm of the cell is split in two, making two new cells. Cytokinesis usually begins just as mitosis is ending, with a little overlap. Importantly, cytokinesis takes place differently in animal and plant cells.</p>
+            <ul>
+                <li>Animal Cells</li>
+                <p>In animals, cell division occurs when a band of cytoskeletal fibers called the contractile ring contracts inward and pinches the cell in two, a process called contractile cytokinesis. The indentation produced as the ring contracts inward
+                    is called the cleavage furrow. Animal cells can be pinched in two because they’re relatively soft and squishy.</p>
+                <li>Plant Cells</li>
+                <p>Plant cells are much stiffer than animal cells; they’re surrounded by a rigid cell wall and have high internal pressure. Because of this, plant cells divide in two by building a new structure down the middle of the cell. This structure,
+                    known as the cell plate, is made up of plasma membrane and cell wall components delivered in vesicles, and it partitions the cell in two.</p>
+            </ul>
+        </ol>
     </div>
 </body>
 

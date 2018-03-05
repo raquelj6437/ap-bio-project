@@ -6,7 +6,7 @@ html{
     background-size:cover;
 }
 
-#mitosis,#interphase,#goneWrong {
+#mitosis,#interphase,#goneWrong,.body {
     position: relative;
     width: 80%;
     left: 10%;

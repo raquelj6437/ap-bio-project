@@ -2,6 +2,7 @@
 <html>
 <!--Credit:
     https://www.khanacademy.org/science/biology/cellular-molecular-biology/mitosis/a/cell-cycle-phases-->
+
 <head>
     <meta charset="UTF-8">
     <title>The Cell Cycle</title>
@@ -36,7 +37,7 @@
                 $('#goneWrong').show()
                 $('#interphase').hide()
             });
-            
+
             $('.pbuttons').on('click', function() {
                 $('button').removeClass('selected');
                 $(this).addClass('selected');
@@ -77,24 +78,24 @@
                 }, 250));
             }
         });
-        
+
         function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
         }
-        
+
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-        
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
-          }
         }
     </script>
 </head>
@@ -102,15 +103,15 @@
 <body>
     <p class='scrollToTop'>Press Enter to scroll back to top</p>
     <div class="drop">
-    <button onclick="myFunction()" class="dropbtn">Menu</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="info.html">Home</a>
-        <a href="vocab.html">Vocabulary</a>
-        <a href="https://www.biologycorner.com/quiz/qz_mitosis.html">Quiz</a>
-      </div>
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="info.html">Home</a>
+            <a href="vocab.html">Vocabulary</a>
+            <a href="https://www.biologycorner.com/quiz/qz_mitosis.html">Quiz</a>
+        </div>
     </div>
     <h1 id='title'>The <span id='cell'>Cell</span> Cycle</h1>
-    
+
     <div id='interphase'>
         <h2>Interphase</h2>
         <div class='buttons'>
@@ -118,21 +119,22 @@
             <button class='topic firstButton mitosisButton'>Mitosis</button>
             <button class='topic firstButton goneWrongButton'>Mitosis Gone Wrong</button>
         </div>
-        
-        <p>The cell cycle can be thought of as the life cycle of a cell. It controls the growth and division of cells. It includes three steps such as the the first gap phase (G<sub>1</sub>), synthesis phase (S), second gap phase (G<sub>2</sub>). The two growth phases and the synthesis phase of the cell cycle are often referred to as interphase of mitosis. The interphase takes place between one mitotic (M) phase</p>
-        
+
+        <p>The cell cycle can be thought of as the life cycle of a cell. It controls the growth and division of cells. It includes three steps such as the the first gap phase (G<sub>1</sub>), synthesis phase (S), second gap phase (G<sub>2</sub>). The two
+            growth phases and the synthesis phase of the cell cycle are often referred to as interphase of mitosis. The interphase takes place between one mitotic (M) phase. (Refer to Vocabulary Page about M phase using the menu tab.)</p>
+
         <h3>First Gap Phase</h3>
         <p> During G<sub>1</sub> phase, also called the first gap phase, the cell grows physically larger, copies organelles, and makes the molecular building blocks it will need in later steps.</p>
-        
+
         <h3>Synthesis Phase</h3>
         <p>In S phase, the cell synthesizes a complete copy of the DNA in its nucleus. It also duplicates a microtubule-organizing structure called the centrosome. The centrosomes help separate DNA during M phase.</p>
-        
+
         <h3>Second Gap Phase</h3>
         <p>During the second gap phase, or G<sub>2</sub>, the cell grows more, makes proteins and organelles, and begins to reorganize its contents in preparation for mitosis. G<sub>2</sub> phase ends when mitosis begins.</p>
-        
+
         <img src="images/interphase.png" alt="interphase">
     </div>
-    
+
     <div id='mitosis'>
         <h2>Mitosis</h2>
         <div class='buttons'>
@@ -230,7 +232,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id='goneWrong'>
         <h2>Mitosis Gone Wrong</h2>
         <div class='buttons'>
@@ -238,23 +240,31 @@
             <button class='topic firstButton mitosisButton'>Mitosis</button>
             <button class='topic firstButton goneWrongButton'>Mitosis Gone Wrong</button>
         </div>
-        
-        <p>Mitosis is the process by which somatic cells divide or replicate themselves. When mitosis goes wrong, cells can grow uncontrollably.Cells however, have ways of ensuring that mitosis does not go wrong, but when these “safeguards fail”, faulty mitosis produces mutant cells. These mutant cells, cancer cells, are caused because your body has many different signals that control how much, and how often your cells divide. If your cell certain sequence is not aligned in the right order or at  the right time cancer than occurs.</p>
-        
+
+        <p>Mitosis is the process by which somatic cells divide or replicate themselves. When mitosis goes wrong, cells can grow uncontrollably.Cells however, have ways of ensuring that mitosis does not go wrong, but when these “safeguards fail”, faulty
+            mitosis produces mutant cells. These mutant cells, cancer cells, are caused because your body has many different signals that control how much, and how often your cells divide. If your cell certain sequence is not aligned in the right order
+            or at the right time cancer than occurs.</p>
+
         <h3>Checkpoints</h3>
-        <p>Mitosis has several processes with checkpoints to make sure things are going properly. If a cell detects that something has gone wrong during mitosis, the first thing it does is to stop the process. The three major checkpoints during mitosis are the G1, G2 and mitotic spindle checkpoints. Which all provide the cell with an opportunity to intervene if something goes wrong in order to fix the problem. Each checkpoint has a specific proteins that ensure that everything is working properly.</p>
-        
+        <p>Mitosis has several processes with checkpoints to make sure things are going properly. If a cell detects that something has gone wrong during mitosis, the first thing it does is to stop the process. The three major checkpoints during mitosis are
+            the G1, G2 and mitotic spindle checkpoints. Which all provide the cell with an opportunity to intervene if something goes wrong in order to fix the problem. Each checkpoint has a specific proteins that ensure that everything is working properly.</p>
+
         <h3>Self-Repair</h3>
-        <p>During mitosis, the DNA within the cell duplicates. The process involves many changes and the movement of chromosomes and organelles within the cell. This activity can sometimes cause DNA to break. If the cell is able to detect broken DNA, mitosis ceases and an elaborate DNA repair process is activated. After detecting damage, it causes the cell cycle to stop, which allows time for repairs.</p>
-        
+        <p>During mitosis, the DNA within the cell duplicates. The process involves many changes and the movement of chromosomes and organelles within the cell. This activity can sometimes cause DNA to break. If the cell is able to detect broken DNA, mitosis
+            ceases and an elaborate DNA repair process is activated. After detecting damage, it causes the cell cycle to stop, which allows time for repairs.</p>
+
         <h3>Apoptosis</h3>
-        <p>Sometimes a cell cannot fix the problem, leading to apoptosis. Apoptosis, known as programmed cell death, ensures that if mitosis goes wrong and cannot be fixed, the cell does not continue to divide. If it does, it would lead to the production of mutant cells that might cause problems.</p>
-        
+        <p>Sometimes a cell cannot fix the problem, leading to apoptosis. Apoptosis, known as programmed cell death, ensures that if mitosis goes wrong and cannot be fixed, the cell does not continue to divide. If it does, it would lead to the production
+            of mutant cells that might cause problems.</p>
+
         <h3>Mutant Cells</h3>
-        <p>If an error occurs during mitosis but the cell still divides, it produces two mutant cells. These mutants can contain the wrong number of chromosomes or broken chromosomes. Since chromosomes carry the cell's DNA, mutant cells will not function normally. This means that mutant cells may die sooner than they should, or they may grow uncontrollably, which results in cancer.</p>
-        
+        <p>If an error occurs during mitosis but the cell still divides, it produces two mutant cells. These mutants can contain the wrong number of chromosomes or broken chromosomes. Since chromosomes carry the cell's DNA, mutant cells will not function
+            normally. This means that mutant cells may die sooner than they should, or they may grow uncontrollably, which results in cancer.</p>
+
         <h3>Errors in Mitosis</h3>
-        <p>Errors in mitosis normally occur during metaphase, when the chromosomes align at the metaphase plate. If the duplicate chromosomes do not pair properly at the metaphase plate, the pair will not move properly to each pole during anaphase. This results in one cell having two copies of the chromosome, while the other cell has none. This type of error is normally fatal to the daughter cell lacking a copy of a chromosome. Cells receiving two copies of a chromosome will have an increase in expression of the genes contained on the extra chromosome. If the genes function to slow growth, the extra copy may be fatal to the cell. However, if the genes promote growth, the cell may grow uncontrollably, leading to cancer.</p>
+        <p>Errors in mitosis normally occur during metaphase, when the chromosomes align at the metaphase plate. If the duplicate chromosomes do not pair properly at the metaphase plate, the pair will not move properly to each pole during anaphase. This
+            results in one cell having two copies of the chromosome, while the other cell has none. This type of error is normally fatal to the daughter cell lacking a copy of a chromosome. Cells receiving two copies of a chromosome will have an increase
+            in expression of the genes contained on the extra chromosome. If the genes function to slow growth, the extra copy may be fatal to the cell. However, if the genes promote growth, the cell may grow uncontrollably, leading to cancer.</p>
     </div>
 </body>
 
