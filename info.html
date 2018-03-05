@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+<!--Credit:
+    https://www.khanacademy.org/science/biology/cellular-molecular-biology/mitosis/a/cell-cycle-phases-->
 <head>
     <meta charset="UTF-8">
     <title>The Cell Cycle</title>
@@ -11,12 +12,34 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300" rel="stylesheet">
 
     <script>
+        $('#mitosis').hide()
+        $('#goneWrong').hide()
+        
         $(function() {
             $('.dropdown').hide()
             $('#earlyP').show()
             $('#ep').addClass('selected');
             $('.scrollToTop').hide();
+            $('#mitosis').hide()
+            $('#goneWrong').hide()
+            $('#interphase').show()
 
+            $('.interphaseButton').click(function() {
+                $('#mitosis').hide()
+                $('#goneWrong').hide()
+                $('#interphase').show()
+            });
+            $('.mitosisButton').click(function() {
+                $('#mitosis').show()
+                $('#goneWrong').hide()
+                $('#interphase').hide()
+            });
+            $('.goneWrongButton').click(function() {
+                $('#mitosis').hide()
+                $('#goneWrong').show()
+                $('#interphase').hide()
+            });
+            
             $('.pbuttons').on('click', function() {
                 $('button').removeClass('selected');
                 $(this).addClass('selected');
@@ -89,12 +112,36 @@
         <a href="https://www.biologycorner.com/quiz/qz_mitosis.html">Quiz</a>
       </div>
     </div>
-    <div id='body'>
-        <h1 id='title'>The <span id='cell'>Cell</span> Cycle</h1>
+    <h1 id='title'>The <span id='cell'>Cell</span> Cycle</h1>
+    
+    <div id='interphase'>
+        <h2>Interphase</h2>
         <div class='buttons'>
-            <button class='topic firstButton'>Interphase</button>
-            <button class='topic firstButton'>Mitosis</button>
-            <button class='topic firstButton'>Mitosis Gone Wrong</button>
+            <button class='topic firstButton interphaseButton'>Interphase</button>
+            <button class='topic firstButton mitosisButton'>Mitosis</button>
+            <button class='topic firstButton goneWrongButton'>Mitosis Gone Wrong</button>
+        </div>
+        
+        <p>The cell cycle can be thought of as the life cycle of a cell. It controls the growth and division of cells. It includes three steps such as the the first gap phase (G<sub>1</sub>), synthesis phase (S), second gap phase (G<sub>2</sub>). The two growth phases and the synthesis phase of the cell cycle are often referred to as interphase of mitosis. The interphase takes place between one mitotic (M) phase</p>
+        
+        <h3>First Gap Phase</h3>
+        <p> During G<sub>1</sub> phase, also called the first gap phase, the cell grows physically larger, copies organelles, and makes the molecular building blocks it will need in later steps.</p>
+        
+        <h3>Synthesis Phase</h3>
+        <p>In S phase, the cell synthesizes a complete copy of the DNA in its nucleus. It also duplicates a microtubule-organizing structure called the centrosome. The centrosomes help separate DNA during M phase.</p>
+        
+        <h3>Second Gap Phase</h3>
+        <p>During the second gap phase, or G<sub>2</sub>, the cell grows more, makes proteins and organelles, and begins to reorganize its contents in preparation for mitosis. G<sub>2</sub> phase ends when mitosis begins.</p>
+        
+        <img src="images/interphase.png" alt="interphase">
+    </div>
+    
+    <div id='mitosis'>
+        <h2>Mitosis</h2>
+        <div class='buttons'>
+            <button class='topic firstButton interphaseButton'>Interphase</button>
+            <button class='topic firstButton mitosisButton'>Mitosis</button>
+            <button class='topic firstButton goneWrongButton'>Mitosis Gone Wrong</button>
         </div>
         <p id="intro">The Cell Cycle goes through a process of cell division call mitosis. Mitosis is a type of cell division in which one cell, the mother, divides to produce two new cells, the daughters, that are genetically identical to itself. Mitosis is the part
             of the division process in which the DNA of the cell's nucleus is split into two equal sets of chromosomes. Meiosis, on the other hand, is used for just one purpose in the human body. Its goal is to make daughter cells with exactly half as
@@ -185,6 +232,17 @@
                 <p></p>
             </div>
         </div>
+    </div>
+    
+    <div id='goneWrong'>
+        <h2>Mitosis Gone Wrong</h2>
+        <div class='buttons'>
+            <button class='topic firstButton interphaseButton'>Interphase</button>
+            <button class='topic firstButton mitosisButton'>Mitosis</button>
+            <button class='topic firstButton goneWrongButton'>Mitosis Gone Wrong</button>
+        </div>
+        
+        
     </div>
 </body>
 
