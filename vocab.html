@@ -12,9 +12,30 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300" rel="stylesheet">
 
     <script>
+        $(document).keypress(function(event) {
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if (keycode == '13') {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            }
+        });
+
         if (performance.navigation.type == 1) {
             document.location.href = "index.html";;
         }
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() < 100) {
+                $('.scrollToTop').hide();
+            }
+            else {
+                $('.scrollToTop').fadeIn();
+                clearTimeout($.data(this, "scrollCheck"));
+                $.data(this, "scrollCheck", setTimeout(function() {
+                    $('.scrollToTop').delay(500).fadeOut(2000);
+                }, 250));
+            }
+        });
 
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -43,7 +64,12 @@
             font-weight: bold;
             text-decoration: underline;
         }
+        ol{
+            font-size: 40px;
+        }
     </style>
+    <p class='scrollToTop'>Press Enter to scroll back to top</p>
+    
     <div class="drop">
         <button onclick="myFunction()" class="dropbtn">Menu</button>
         <div id="myDropdown" class="dropdown-content">
